@@ -4,9 +4,44 @@
         <link href="SmartNews.css" rel="stylesheet">
     </head>
     <body>
-        <div id="main">
-            <p id="news-text"></p>
+        <div id="nevBar">
+            <h2><pre>         SMART<small style="color: red;">News</small></pre></h2>
+            <label id="label-ct">SELECT COUNTRY:</label>
+            <select id="country">
+                <option></option>
+                <option>INDIA</option>
+                <option>U.S.A</option>
+                <option>U.K.</option>
+                <option>ALL WORLD</option>
+            </select>
+            <label id="label-ab">SELECT OPTION:</label>
+            <select id="about">
+                <option></option>
+                <option>ALL</option>
+                <option>SPORTS</option>
+                <option>BUISNESS</option>
+                <option>INCIDENT</option>
+                <option>POLITICS</option>
+                <option>EDUCATION</option>
+                <option>AGRICULTURE</option>
+                <option>HEALTH</option>
+            </select>
+            <button id="f-search" >SEARCH</button>
+            <div id="fullbox">
+                <input type="text" id="searchbox" placeholder="SEARCH FOR SPECIFIC NEWS">
+                <button id="s-search">SEARCH</button>
+            </div>
         </div>
+        <div id="display">
+            <div id="main">
+                <img src="" id="img">
+                <h3 id="title"></h3>
+                <p id="detail"></p>
+            </div>
+        </div>
+        <!-- <div id="main">
+            <p id="news-text"></p>
+        </div> -->
         <script src="SmartNews.js"></script>
     </body>
 </html>
