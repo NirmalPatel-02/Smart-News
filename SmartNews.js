@@ -4,6 +4,10 @@ const url="https://newsapi.org/v2/everything?q=";
 let country=document.getElementById('country');
 let about=document.getElementById('about');
 let search= document.getElementById('searchbox');
+let main= document.getElementById('main');
+
+main.style.visibility="hidden";
+
 
 document.getElementById("f-search").addEventListener("click" ,() => fetchNews(country.value , about.value));
 document.getElementById("s-search").addEventListener("click" ,() => fetchNewsS(search.value));
@@ -21,10 +25,11 @@ async function fetchNewsS(z){
 
 function bindData(articles){
     const display = document.getElementById('display');
-    const main= document.getElementById('main');
+    let main= document.getElementById('main');
     const title= document.getElementById('title');
     const detail=document.getElementById('detail');
     const img=document.getElementById('img');
+    main.style.visibility="visible";
 
     let x=0;
     articles.forEach((articles) => {
