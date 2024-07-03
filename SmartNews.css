@@ -69,9 +69,9 @@
     border-radius: 20px;
     box-shadow: 2px 2px 10px;
     background-image: linear-gradient(to top left ,rgb(107, 107, 107),white);
-    padding-top: 10px;
+    padding-top: 5px;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 #main{
     background-color: white;
