@@ -4,7 +4,7 @@ const url="https://newsapi.org/v2/everything?q=";
 let country=document.getElementById('country');
 let about=document.getElementById('about');
 let search= document.getElementById('searchbox');
-let main= document.getElementById('main');
+const main= document.getElementById('main');
 
 main.style.visibility="hidden";
 
@@ -25,7 +25,7 @@ async function fetchNewsS(z){
 
 function bindData(articles){
     const display = document.getElementById('display');
-    let main= document.getElementById('main');
+    const main= document.getElementById('main');
     const title= document.getElementById('title');
     const detail=document.getElementById('detail');
     const img=document.getElementById('img');
